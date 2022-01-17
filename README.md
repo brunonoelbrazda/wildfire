@@ -1,15 +1,15 @@
 # Overview
 The capstone was a 5-week project completed towards the end of my data science immersive course where we were given the freedom to address a real-world issue by applying our newly learnt skills.
 # Contents
-Introduction and Goals
-The Data
-Exploratory Data Analysis
-Feature Engineering
-Clustering
-Modelling
-Further Steps
-Conclusions
-Key Learnings/Limitations
+### Introduction and Goals
+### The Data
+### Exploratory Data Analysis
+### Feature Engineering
+### Clustering
+### Modelling
+### Further Steps
+### Conclusions
+### Key Learnings/Limitations
 
 # Introduction and Goals
 
