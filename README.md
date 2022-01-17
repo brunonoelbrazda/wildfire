@@ -27,7 +27,7 @@ To supplement this Dataset, I used an API called “Virtual Crossing” to colle
 
 
 The Classes are defined as follows:
-
+![Classes](/visuals/fire_classes.png)
 
 
 # Exploratory Data Analysis
@@ -35,15 +35,20 @@ The EDA process highlighted the distribution of fires across the U.S, the season
 
 
 Mean Wildfire Size
+![MeanSize](/visuals/mean_size.png)
 
 
 Wildfires by Count
+![Count](/visuals/count.png)
 
 
 Mean Wildfire Size in Acres Sampled Weekly
+![Seasonality](/visuals/seasonality.png)
 
 
 Insufficient correlations among features
+![Correlations](/visuals/correlations.png)
+
 # Feature Engineering:
 
 Feature Engineering focused on extracting duration of the fire from discovery and contained date, extracting the month of the fire as a feature, and dummifying categorical features. The final features that could be used for modelling were:
@@ -56,6 +61,12 @@ Target: Fire Size Class
 
 # Clustering:
 DBSCAN Clustering was performed twice, once on more recent fires (2015), and a second time on fires from a decade earlier (2005-2006). By tuning the parameters (eps (which specifies how close points should be to each other to be considered a part of a cluster) and minimum samples), I was able to break the U.S Wildfires into a few clusters, and pinpoint the regions with the highest density of wildfires. The fires within the “purple” cluster in both instances were not taken into account, as their geographic diversity made them difficult to model accurately.
+
+3 Clusters
+![3clusters](/visuals/3clusters.png)
+
+5 Clusters
+![5clusters](/visuals/5clusters.png)
 
 
 # Modelling:
