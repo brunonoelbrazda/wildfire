@@ -80,13 +80,17 @@ The model performed best when classifying fires of sizes A and B, as illustrated
 ![ConfusionMatrix1](/visuals/confusion_matrix1.png)
 ![Precision-RecallCurve1](/visuals/precision_recall1.png)
 
-A similar process was applied to the second, more recent set of fires (2015). To explore different regions of the U.S, here a North-Eastern Cluster was chosen for modelling. Once again a Random Forest Classifier was used, achieving a score of 0.8, far above baseline (0.61).
+A similar process was applied to the second, more recent set of fires (2015). To explore different regions of the U.S, here a North-Eastern Cluster was chosen for modelling. A preliminary Random Forest Classifier was used, achieving a score of 0.8, far above baseline (0.61).
+![model2](/visuals/model2.png)
 
 Feature Importances were extracted once again, interestingly in this North-Eastern cluster, latitude and temperature were the most important features.
+![feature_importances2](/visuals/feature_impoerances2.png)
 
 
 
 ROC and Precision-Recall Curves
+![roc2](/visuals/roc2.png)
+
 
 # Further Steps:
 
