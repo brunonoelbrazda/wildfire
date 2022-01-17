@@ -70,14 +70,15 @@ DBSCAN Clustering was performed twice, once on more recent fires (2015), and a s
 
 
 # Modelling:
-Once I had obtained the different clusters, I began fitting different classifiers on the data. On a cluster that spanned the west coast of the United States, with fires in 2005-2006, I was able to achieve a mean cross validation score of 49% higher than baseline on the test set.
+Once I had obtained the different clusters, I began fitting different classifiers on the data. On a cluster that spanned the west coast of the United States, with fires in 2005-2006, a preliminary random forest classifier achieved a mean cross validation score of 49% higher than baseline on the test set.
+![Model11](/visuals/model1.png)
+
 Feature Importances of the Model. Duration and Longitude were the two most important
+![FeatureImportances1](/visuals/feature_importance1.png)
 
 The model performed best when classifying fires of sizes A and B, as illustrated by the confusion Matrix and Precision-Recall curves below.
-
-
-
-
+![ConfusionMatrix1](/visuals/confusion_matrix1.png)
+![Precision-RecallCurve1](/visuals/precision_recall1.png)
 
 A similar process was applied to the second, more recent set of fires (2015). To explore different regions of the U.S, here a North-Eastern Cluster was chosen for modelling. Once again a Random Forest Classifier was used, achieving a score of 0.8, far above baseline (0.61).
 
