@@ -20,7 +20,7 @@ The hypothesis for my capstone was to use machine learning to accurately classif
 # The Data
 The primary Dataset used was a Geo-Referenced SQLite Database containing 1.88 Million U.S Wildfires spanning 24 years. This Dataset was obtained from Kaggle, where it has been used for Kaggle Competitions. 
 A snapshot of the Database:
-
+![DataBase](/visuals/database.png)
 
 To supplement this Dataset, I used an API called “Virtual Crossing” to collect historic weather data. The Weather Data I used was Temperature and Humidity.
 
