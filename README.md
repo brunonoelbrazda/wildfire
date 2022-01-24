@@ -15,7 +15,7 @@ The capstone was a 5-week project completed towards the end of my data science i
 
 According to the World Health Organisation, Wildfires can disrupt transportation, communications, power and gas services, and water supply. They also lead to a deterioration of the air quality, and loss of property, crops, resources, animals and people.
 
-The goal for my capstone was to use machine learning to accurately classify wildfires in the United States based on their size, in order to determine what factors contribute the most to Wildfire size. My hypothesis was that using features such as temperature, humidity, time, and fire cause, I would be able to classify them very accurately by size.This could in turn help improve wildfire prevention in regions of the United States that are most at risk. 
+The goal for my capstone was to use machine learning to accurately classify wildfires in the United States based on their size, in order to determine what factors contribute the most to Wildfire size. My hypothesis was that using features such as temperature, humidity, time, and fire cause, I would be able to classify them very accurately by size. This could in turn help improve wildfire prevention in regions of the United States that are most at risk. 
 
 # The Data
 The primary Dataset used was a Geo-Referenced SQLite database containing 1.88 Million U.S Wildfires spanning 24 years. This Dataset was obtained from Kaggle, where it has been used for Kaggle Competitions. 
