@@ -15,14 +15,14 @@ The capstone was a 5-week project completed towards the end of my data science i
 
 According to the World Health Organisation, Wildfires can disrupt transportation, communications, power and gas services, and water supply. They also lead to a deterioration of the air quality, and loss of property, crops, resources, animals and people.
 
-The hypothesis for my capstone was to use machine learning to accurately classify wildfires in the United States based on their size, in order to determine what factors contribute the most to Wildfire size. This could in turn help improve wildfire prevention in regions of the United States that are most at risk. 
+The goal for my capstone was to use machine learning to accurately classify wildfires in the United States based on their size, in order to determine what factors contribute the most to Wildfire size. My hypothesis was that using features such as temperature, humidity, time, and fire cause, I would be able to classify them very accurately by size.This could in turn help improve wildfire prevention in regions of the United States that are most at risk. 
 
 # The Data
-The primary Dataset used was a Geo-Referenced SQLite Database containing 1.88 Million U.S Wildfires spanning 24 years. This Dataset was obtained from Kaggle, where it has been used for Kaggle Competitions. 
-A snapshot of the Database:
+The primary Dataset used was a Geo-Referenced SQLite database containing 1.88 Million U.S Wildfires spanning 24 years. This Dataset was obtained from Kaggle, where it has been used for Kaggle Competitions. 
+A snapshot of the database:
 ![DataBase](/visuals/database.png)
 
-To supplement this Dataset, I used an API called “Virtual Crossing” to collect historic weather data. The Weather Data I used was Temperature and Humidity.
+To supplement this dataset, I used an API called “Virtual Crossing” to collect historic weather data. The weather data I used was temperature and humidity, as these in my mind would influence how large a fire could grow to be.
 
 
 
@@ -31,7 +31,7 @@ The Classes are defined as follows:
 
 
 # Exploratory Data Analysis
-The EDA process highlighted the distribution of fires across the U.S, the seasonality of Wildfire Size, as well as low correlations between my features and target variable. This prompted me to apply DBSCAN clustering.
+The EDA process highlighted the distribution of fires across the U.S, the seasonality of wildfire Size, as well as low correlations between my features and target variable. This prompted me to apply DBSCAN clustering.
 
 
 Mean Wildfire Size
@@ -97,7 +97,9 @@ ROC and Precision-Recall Curves
 To take his project further I would increase the size of my clusters, and supplement my data set with additional features to improve model accuracies. (income of county, time of day fire started) I would also investigate the how the trends in wildfires changed over time. (SARIMA Models).
 
 # Conclusion:
-Overall, through clustering I was able to achieve my goal of accurately classifying fire size classes. My models performed much better than baselines, and by extracting feature importances I was able to determine factors that contribute the most to the size of a wildfire.
+Overall, through clustering I was able to achieve my goal of accurately classifying fire size classes. Following DBSCAN clustering and supplementing my data with an API, my models performed about 50% higher than baseline. Extracting feature importances I was able to determine factors that contribute the most to the size of a wildfire. For the cluster on the western coast of the United States, these were, in order of importance: duration, longitude, latitude, and humidity. As for the north-eastern cluster, the most important features, in order, were: latitude, temperature, humidity, and longitude. These insights highlight how different geographic regions must prioritise different factors when carrying out wildfire prevention.
 
 # Limitations/Key Learnings:
-The primary limitation I encountered was the fact that my DBSCAN algorithm scaled quite poorly, therefore I could only input roughly 30,000 fires. Moreover, finding a suitable API that contained historic weather data and could be queried using longitude/latitude was an arduous process that involved a lot of trial and error. I was able to employ a whole range of tools in this project which I will be able to use as I move forward in my Data Science career.
+The primary limitation I encountered was the fact that my DBSCAN algorithm scaled quite poorly, therefore I could only input roughly 30,000 fires. Moreover, finding a suitable API that contained historic weather data and could be queried using longitude/latitude was an arduous process that involved a lot of trial and error. 
+My key learnings from the project were time-management, and how this relates to planning ahead. I had previously thought that modelling would be the most challenging and time consuming part of the project, and had allocated more time to it than to the data collection and cleaning. Finding an appropriate API, making requests, and transforming the data took far longer than I had anticipated. Modelling, on the other hand, was in fact a matter of reusing some generic code I had written in the past, and turned out to take far less time than I had imagined. I will take this as a lesson as I move forward in my Data Science career.
+
