@@ -84,7 +84,7 @@ A similar process was applied to the second, more recent set of fires (2015). To
 ![model2](/visuals/model2.png)
 
 Feature Importances were extracted once again, interestingly in this North-Eastern cluster, latitude and temperature were the most important features.
-![feature_importances2](/visuals/feature_impoerances2.png)
+![feature_importances2](/visuals/feature_importances2.png)
 
 
 
